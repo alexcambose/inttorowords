@@ -1,7 +1,9 @@
 # inttorowords
 Convert numbers into Romanian words
 ## Install
-`npm install -S inttorowords`
+```
+npm install -S inttorowords
+```
 
 [npm](https://www.npmjs.com/package/inttorowords)
 ## Usage
