@@ -36,4 +36,4 @@ console.log(inttorowords(123456789));
 console.log(inttorowords(999999999));
 // nouă sute nouăzeci şi nouă de milioane nouă sute nouăzeci şi nouă de mii nouă sute nouăzeci şi nouă
 ```
-:warning: Maximum range is between 1 and 999999999 :warning: 
+:warning: Maximum range is between `1` and `999999999`
