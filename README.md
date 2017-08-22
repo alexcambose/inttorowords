@@ -16,7 +16,7 @@ console.log(inttorowords(123));
 // o sută douăzeci şi trei
 
 console.log(inttorowords(1234));
-// o sută douăzeci şi trei
+// o mie două sute treizeci şi patru
 
 console.log(inttorowords(12345));
 // douăsprezece mii trei sute patruzeci şi cinci
