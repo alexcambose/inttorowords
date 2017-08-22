@@ -2,6 +2,8 @@
 Convert numbers into Romanian words
 ## Install
 `npm install -S inttorowords`
+
+[npm](https://www.npmjs.com/package/inttorowords)
 ## Usage
 ```js 
 const inttorowords = require('inttorowords').inttorowords;
