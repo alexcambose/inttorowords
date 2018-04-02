@@ -1,11 +1,11 @@
 {
   "name": "inttorowords",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert numbers into Romanian words",
   "main": "index.js",
   "repository": "alexcambose/inttorowords",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [
     "web",
@@ -16,5 +16,9 @@
     "convert"
   ],
   "author": "Alexandru Cambose",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.5"
+  }
 }

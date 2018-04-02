@@ -1,14 +1,16 @@
 # inttorowords
 Convert numbers into Romanian words
+
+[![Build Status](https://travis-ci.org/alexcambose/inttorowords.svg?branch=master)](https://travis-ci.org/alexcambose/inttorowords)
 ## Install
+Install using [npm](https://www.npmjs.com/package/inttorowords)
 ```
 npm install -S inttorowords
 ```
 
-[npm](https://www.npmjs.com/package/inttorowords)
 ## Usage
 ```js 
-const inttorowords = require('inttorowords').inttorowords;
+const inttorowords = require('inttorowords');
 
 console.log(inttorowords(1));
 // unu

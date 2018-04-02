@@ -28,24 +28,23 @@ const inttorowords = (num, after = '') => {
     if (num < 1000) { //hundreds
         let sute = inttorowords(sNum[0], ' sute');
         if (sNum[0] === '1') sute = 'o sută';
-        return sute + ' ' + inttorowords(sNum.substring(1, sNum.length)) + after;
+        return (sute + ' ' + inttorowords(sNum.substring(1, sNum.length)) + after).trim();
     }
     if (num < 1000000) { //thousands 
         let miiNum = sNum.substring(0, sNum.length - 3);
         let mii = 'o mie ';
-        if (miiNum > 1) mii = inttorowords(miiNum, de(miiNum) + ' mii ');
-
-        return mii + inttorowords(sNum.substring(miiNum.length, sNum.length));
+        if (miiNum > 1) mii = inttorowords(miiNum, de(miiNum) + ' mii');
+        return (mii + ' ' + inttorowords(sNum.substring(miiNum.length, sNum.length))).trim();
     }
     if (num <= 999999999) { //milions 
         let milNum = sNum.substring(0, sNum.length - 6);
         let mil = 'un milion ';
         if (milNum > 1) mil = inttorowords(milNum, de(milNum.substring(0, sNum.length - 6)) + ' milioane ');
-        return mil + inttorowords(sNum.substring(milNum.length, sNum.length));
+        return (mil + ' ' + inttorowords(sNum.substring(milNum.length, sNum.length))).trim();
     }
 
     //and away we go
     return;
 };
 
-module.exports.inttorowords = inttorowords;
+module.exports = inttorowords;
